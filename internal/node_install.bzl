@@ -39,11 +39,11 @@ exports_files([
   if os_name.startswith("mac os"):
     repository_ctx.download_and_extract(
         [
-            "http://mirror.bazel.build/nodejs.org/dist/v6.10.2/node-v6.10.2-darwin-x64.tar.xz",
-            "https://nodejs.org/dist/v6.10.2/node-v6.10.2-darwin-x64.tar.xz",
+            "http://mirror.bazel.build/nodejs.org/dist/v8.3.0/node-v8.3.0-darwin-x64.tar.xz",
+            "https://nodejs.org/dist/v8.3.0/node-v8.3.0-darwin-x64.tar.xz",
         ],
-        stripPrefix = "node-v6.10.2-darwin-x64",
-        sha256 = "360b887361b2597613f18968e3fc0e920079a363d0535fc4e40532e3426fc6eb"
+        stripPrefix = "node-v8.3.0-darwin-x64",
+        sha256 = "6e197540cf8ad625b8684c7ec9cd31fe05b3c3407ee52a038e566cebe82ae8d8"
     )
   elif os_name.find("windows") != -1:
     repository_ctx.download_and_extract(
